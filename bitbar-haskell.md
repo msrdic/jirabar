@@ -20,7 +20,7 @@ At [Seven Bridges](https://www.sevenbridges.com/) we use Jira for our project ma
 
 So, here's how that relevant info looks like in my menu bar:
 
-![bitbar-haskell-jira.png](resources/C708C32375F2DD59AA9AD90869F9C06B.png =422x46)
+![assets/bitbar-haskell-jira.png](resources/C708C32375F2DD59AA9AD90869F9C06B.png =422x46)
 
 That's all one long clickable menu bar item. Clicking it opens the dropdown list with all of the issues that fall under those categories – I will not explain what it means in my case, since the plugin is pretty generic, so I will concentrate on the main concepts, how it works and how to add your own.
 
