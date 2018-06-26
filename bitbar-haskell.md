@@ -20,7 +20,7 @@ At [Seven Bridges](https://www.sevenbridges.com/) we use Jira for our project ma
 
 So, here's how that relevant info looks like in my menu bar:
 
-![assets/bitbar-haskell-jira.png](resources/C708C32375F2DD59AA9AD90869F9C06B.png =422x46)
+![bitbar-haskell-jira.png](https://github.com/msrdic/jirabar/blob/master/assets/C708C32375F2DD59AA9AD90869F9C06B.png)
 
 That's all one long clickable menu bar item. Clicking it opens the dropdown list with all of the issues that fall under those categories – I will not explain what it means in my case, since the plugin is pretty generic, so I will concentrate on the main concepts, how it works and how to add your own.
 
@@ -41,7 +41,7 @@ Each menu bar item is constructed by joining the icon (in an example above an em
 
 ### Usage
 
-Like all BitBar plugins, you just need to install it by moving it to your BitBar folder. BitBar also supports the **bitbar://** url scheme, so you can install it by clicking [here](bitbar://openPlugin?title=Jirabar&amp;src=https://raw.githubusercontent.com/msrdic/jirabar/master/jirabar.1m.hs).
+Like all BitBar plugins, you install it by just moving it to your BitBar plugins folder. ~~BitBar also supports the **bitbar://** url scheme, so you can install it by clicking [here](bitbar://openPlugin?title=Jirabar&amp;src=https://raw.githubusercontent.com/msrdic/jirabar/master/jirabar.1m.hs).~~
 
 After installing, you should set your username and password for authenticating with Jira. Next step is adding a new section descriptor to the list of existing descriptor (one example is included).
 
