@@ -1,6 +1,6 @@
 # BitBar ❤️ Haskell
 
-This article explains how to write [BitBar](https://getbitbar.com/) plugins in Haskell. BitBar allows you to put the output of any executable script into MacOS's menu bar. There are a lot of interesting plugins available, but they're mainly written in Bash, Python, Ruby and similar.
+This article contains some notes about writing [BitBar](https://getbitbar.com/) plugins in Haskell. BitBar allows you to put the output of any executable script into MacOS's menu bar. There are a lot of interesting plugins available, but they're mainly written in Bash, Python, Ruby and similar.
 
 I recently learned that you can [script in Haskell](https://www.fpcomplete.com/blog/2016/11/scripting-in-haskell), using [Stack](https://docs.haskellstack.org/en/stable/GUIDE/#script-interpreter), so I took a bit time to write a simple plugin.
 
