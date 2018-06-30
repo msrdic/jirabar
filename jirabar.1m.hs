@@ -139,7 +139,7 @@ processSection sd = do
 
 -- Construct the main menu bar item, one which will be visible
 mainInfo' :: [SectionResults] -> DT.Text
-mainInfo' sections = DT.intercalate "\x00A0" $ map sectionInfo sections
+mainInfo' = DT.intercalate "\x00A0" . filter (not . DT.null) . map sectionInfo
 
 sectionInfo :: SectionResults -> DT.Text
 sectionInfo section | noIssues && display0 && display = DT.concat [icon, DT.pack total']
