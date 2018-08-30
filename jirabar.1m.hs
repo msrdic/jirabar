@@ -38,6 +38,12 @@ username = "[YOUR JIRA USERNAME]"
 password = "[YOUR JIRA PASSWORD]"
 credentials = basicAuth username password
 
+-- your Jira browse path
+-- this is usually of the form https://<address-to-your-jira>/browse
+-- the 'browse' path segment is important since it is used for
+-- generating clickable links in the dropdown
+jiraBrowsePath = "[YOUR JIRA ADDRESS]"
+
 -- IMPORTANT: whenever you're referring to your username in queries below,
 -- use the supplied username' value.
 username' = decodeUtf8 username
@@ -178,7 +184,7 @@ watchAndPrintIssue icon p@(key, _, watched) =
     else printIssue icon p
 
 printIssue icon p = putStrLn $ DT.unpack (issue icon p)
-issue icon (key, summary, _) = DT.concat [icon, key, ": " , summary, "|", "href=https://sbgdev.atlassian.net/browse/", key ]
+issue icon (key, summary, _) = DT.concat [icon, key, ": " , summary, "|", "href=", jiraBrowsePath, key ]
 
 -- add myself to a list of watchers
 watchIssue key = do
