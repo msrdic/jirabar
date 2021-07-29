@@ -1,6 +1,6 @@
 #!/usr/bin/env /usr/local/bin/stack
 {- stack
-  --resolver lts-11.14
+  --resolver lts-18.4
   --install-ghc
   runghc
   --package wreq
